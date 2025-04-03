@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nile Dose Cafe - كافيه سوداني بنكهة عالمية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Nile Dose Cafe Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="en">Experience the Taste of Sudan with a Global Twist</h1>
+                <h1 class="ar">كافيه سوداني بنكهة عالمية</h1>
+                <p class="en">Nile Dose Cafe brings authentic Sudanese flavors to the heart of Riyadh</p>
+                <p class="ar">نكهة النيل في قلب الرياض</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary-btn">View Menu</a>
+                    <a href="#location" class="btn secondary-btn">Visit Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">About Nile Dose Cafe</h2>
+                <h2 class="ar">عن كافيه النيل دوز</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/cafe-interior.jpg" alt="Nile Dose Cafe Interior">
+                </div>
+                <div class="about-text">
+                    <p class="en">Nile Dose Cafe is a Sudanese cafe that offers authentic Sudanese products with a modern twist. We take pride in bringing the rich flavors of Sudan to Riyadh, creating a unique fusion of traditional recipes and global cafe culture.</p>
+                    <p class="ar">كافيه النيل دوز هو مقهى سوداني يقدم منتجات سودانية أصيلة بطريقة عصرية. نفتخر بتقديم نكهات السودان الغنية إلى الرياض، مما يخلق مزيجًا فريدًا من الوصفات التقليدية وثقافة المقاهي العالمية.</p>
+                    <p class="en">Our mission is to create a welcoming space where customers can enjoy the authentic taste of Sudan while experiencing the comfort and quality of a modern cafe.</p>
+                    <p class="ar">مهمتنا هي خلق مساحة ترحيبية حيث يمكن للعملاء الاستمتاع بالطعم الأصيل للسودان مع تجربة راحة وجودة المقهى العصري.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Our Menu</h2>
+                <h2 class="ar">قائمتنا</h2>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="signature">Signature Drinks</button>
+                <button class="menu-tab" data-category="hot">Hot Drinks</button>
+                <button class="menu-tab" data-category="cold">Cold Drinks</button>
+                <button class="menu-tab" data-category="desserts">Desserts & Snacks</button>
+            </div>
+            
+            <div class="menu-items signature active">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/hibiscus-signature.jpg" alt="Hibiscus Signature">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Hibiscus Signature</h3>
+                        <p class="ar">سقنقشر الكركديه</p>
+                        <p class="description">Our signature hibiscus drink with a special blend of spices</p>
+                        <p class="calories">250 kcal</p>
+                        <p class="price">17 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/tamarind-signature.jpg" alt="Tamarind Signature">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Tamarind Signature</h3>
+                        <p class="ar">سقنقشر العرديب</p>
+                        <p class="description">Refreshing tamarind drink with our special recipe</p>
+                        <p class="calories">230 kcal</p>
+                        <p class="price">17 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/iced-hibiscus.jpg" alt="Iced Hibiscus">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Iced Hibiscus</h3>
+                        <p class="ar">الكركديه المثلج</p>
+                        <p class="description">Chilled hibiscus drink perfect for hot days</p>
+                        <p class="calories">80 kcal</p>
+                        <p class="price">14 SAR</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items hot">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/sudanese-coffee.jpg" alt="Sudanese Coffee">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Sudanese Coffee</h3>
+                        <p class="ar">جبنة صغير</p>
+                        <p class="description">Traditional Sudanese coffee with spices</p>
+                        <p class="calories">12 kcal</p>
+                        <p class="price">7 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/turkish-coffee.jpg" alt="Turkish Coffee">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Turkish Coffee</h3>
+                        <p class="ar">قهوة تركي</p>
+                        <p class="description">Rich and aromatic Turkish coffee</p>
+                        <p class="calories">4 kcal</p>
+                        <p class="price">9 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/spanish-latte.jpg" alt="Spanish Latte">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Spanish Latte</h3>
+                        <p class="ar">سبانيش لاتيه</p>
+                        <p class="description">Espresso with condensed milk and regular milk</p>
+                        <p class="calories">170 kcal</p>
+                        <p class="price">16 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/sudanese-porridge.jpg" alt="Sudanese Porridge">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Sudanese Porridge</h3>
+                        <p class="ar">مديدة دخن</p>
+                        <p class="description">Traditional Sudanese millet porridge</p>
+                        <p class="calories">250 kcal</p>
+                        <p class="price">13 SAR</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items cold">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/passion-fruit-mojito.jpg" alt="Passion Fruit Mojito">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Passion Fruit Mojito</h3>
+                        <p class="ar">موهيتو الباشن فروت</p>
+                        <p class="description">Refreshing mojito with passion fruit</p>
+                        <p class="calories">150 kcal</p>
+                        <p class="price">19 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/ice-spanish-latte.jpg" alt="Ice Spanish Latte">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Ice Spanish Latte</h3>
+                        <p class="ar">آيس سبانش لاتيه</p>
+                        <p class="description">Chilled Spanish latte over ice</p>
+                        <p class="calories">230 kcal</p>
+                        <p class="price">15 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/mixed-berries-smoothie.jpg" alt="Mixed Berries Smoothie">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Mixed Berries Smoothie</h3>
+                        <p class="ar">سموذي التوت</p>
+                        <p class="description">Creamy smoothie with mixed berries</p>
+                        <p class="calories">250 kcal</p>
+                        <p class="price">17 SAR</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-items desserts">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/sudanese-fateer.jpg" alt="Sudanese Fateer">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Sudanese Fateer</h3>
+                        <p class="ar">فطير</p>
+                        <p class="description">Traditional Sudanese pastry</p>
+                        <p class="calories">320 kcal</p>
+                        <p class="price">6 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/basbousa.jpg" alt="Basbousa">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Basbousa</h3>
+                        <p class="ar">بسبوسة</p>
+                        <p class="description">Sweet semolina cake with syrup</p>
+                        <p class="calories">300 kcal</p>
+                        <p class="price">6 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/date-cake.jpg" alt="Date Cake">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Date Cake</h3>
+                        <p class="ar">كيكة التمر</p>
+                        <p class="description">Moist cake made with dates</p>
+                        <p class="calories">280 kcal</p>
+                        <p class="price">16 SAR</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/nile-dose-tiramisu.jpg" alt="Nile Dose Tiramisu">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Nile Dose Tiramisu</h3>
+                        <p class="ar">النيل دوز تيراميسو</p>
+                        <p class="description">Our special tiramisu with Sudanese coffee</p>
+                        <p class="calories">350 kcal</p>
+                        <p class="price">16 SAR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Gallery</h2>
+                <h2 class="ar">معرض الصور</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="Nile Dose Cafe Gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Visit Us</h2>
+                <h2 class="ar">زورونا</h2>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 class="en">Address</h3>
+                            <h3 class="ar">العنوان</h3>
+                            <p>Riyadh, Saudi Arabia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3 class="en">Opening Hours</h3>
+                            <h3 class="ar">ساعات العمل</h3>
+                            <p>Daily: 7:00 AM - 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3 class="en">Contact</h3>
+                            <h3 class="ar">اتصل بنا</h3>
+                            <p>Phone: +966 XX XXX XXXX</p>
+                            <p>Email: info@niledosecafe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.1960323767!2d46.54244071789192!3d24.725555344546187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1617304192176!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="en">Contact Us</h2>
+                <h2 class="ar">تواصل معنا</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="social-media">
+                    <h3 class="en">Follow Us</h3>
+                    <h3 class="ar">تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/niledose_cafe" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Nile Dose Cafe Logo">
+                    <p class="en">Sudanese cafe with a global flavor</p>
+                    <p class="ar">كافيه سوداني بنكهة عالمية</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="en">Quick Links</h4>
+                    <h4 class="ar">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="en">Contact Info</h4>
+                    <h4 class="ar">معلومات الاتصال</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                    <p><i class="fas fa-phone-alt"></i> +966 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@niledosecafe.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nile Dose Cafe. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
