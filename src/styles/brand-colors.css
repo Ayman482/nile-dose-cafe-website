@@ -1,0 +1,307 @@
+/* Brand Colors CSS for Nile Dose Cafe */
+
+:root {
+  /* Primary Brand Colors */
+  --nile-blue: #0077be;
+  --nile-beige: #f5deb3;
+  
+  /* Shades of Nile Blue */
+  --nile-blue-light: #0090e6;
+  --nile-blue-dark: #005f98;
+  --nile-blue-pale: #e6f4fc;
+  
+  /* Shades of Nile Beige */
+  --nile-beige-light: #fff5e6;
+  --nile-beige-dark: #e6c99c;
+  --nile-beige-pale: #fffaf0;
+  
+  /* Accent Colors */
+  --nile-accent-green: #4caf50;
+  --nile-accent-red: #f44336;
+  --nile-accent-yellow: #ffc107;
+  
+  /* Text Colors */
+  --text-dark: #333333;
+  --text-medium: #666666;
+  --text-light: #999999;
+  --text-white: #ffffff;
+  
+  /* Background Colors */
+  --bg-light: #ffffff;
+  --bg-off-white: #f9f9f9;
+  --bg-gray: #f0f0f0;
+}
+
+/* Color Utility Classes */
+.bg-nile-blue {
+  background-color: var(--nile-blue);
+}
+
+.bg-nile-blue-light {
+  background-color: var(--nile-blue-light);
+}
+
+.bg-nile-blue-dark {
+  background-color: var(--nile-blue-dark);
+}
+
+.bg-nile-blue-pale {
+  background-color: var(--nile-blue-pale);
+}
+
+.bg-nile-beige {
+  background-color: var(--nile-beige);
+}
+
+.bg-nile-beige-light {
+  background-color: var(--nile-beige-light);
+}
+
+.bg-nile-beige-dark {
+  background-color: var(--nile-beige-dark);
+}
+
+.bg-nile-beige-pale {
+  background-color: var(--nile-beige-pale);
+}
+
+/* Text Color Classes */
+.text-nile-blue {
+  color: var(--nile-blue);
+}
+
+.text-nile-blue-light {
+  color: var(--nile-blue-light);
+}
+
+.text-nile-blue-dark {
+  color: var(--nile-blue-dark);
+}
+
+.text-nile-beige {
+  color: var(--nile-beige);
+}
+
+.text-nile-beige-dark {
+  color: var(--nile-beige-dark);
+}
+
+/* Border Color Classes */
+.border-nile-blue {
+  border-color: var(--nile-blue);
+}
+
+.border-nile-beige {
+  border-color: var(--nile-beige);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-blue {
+  background: linear-gradient(135deg, var(--nile-blue) 0%, var(--nile-blue-light) 100%);
+}
+
+.bg-gradient-beige {
+  background: linear-gradient(135deg, var(--nile-beige) 0%, var(--nile-beige-light) 100%);
+}
+
+.bg-gradient-blue-beige {
+  background: linear-gradient(135deg, var(--nile-blue) 0%, var(--nile-beige) 100%);
+}
+
+/* Button Styles with Brand Colors */
+.btn-nile-blue {
+  background-color: var(--nile-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-nile-blue:hover {
+  background-color: var(--nile-blue-dark);
+}
+
+.btn-nile-beige {
+  background-color: var(--nile-beige);
+  color: var(--nile-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-nile-beige:hover {
+  background-color: var(--nile-beige-dark);
+}
+
+.btn-outline-blue {
+  background-color: transparent;
+  color: var(--nile-blue);
+  border: 2px solid var(--nile-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-blue:hover {
+  background-color: var(--nile-blue);
+  color: white;
+}
+
+/* Card Styles with Brand Colors */
+.card-nile {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-nile-blue-header {
+  background-color: var(--nile-blue);
+  color: white;
+  padding: 1rem;
+}
+
+.card-nile-beige-header {
+  background-color: var(--nile-beige);
+  color: var(--nile-blue);
+  padding: 1rem;
+}
+
+/* Section Background Styles */
+.section-nile-blue {
+  background-color: var(--nile-blue-pale);
+  padding: 3rem 0;
+}
+
+.section-nile-beige {
+  background-color: var(--nile-beige-pale);
+  padding: 3rem 0;
+}
+
+/* Form Element Styles */
+.input-nile {
+  border: 2px solid var(--nile-blue-light);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.input-nile:focus {
+  border-color: var(--nile-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 190, 0.2);
+}
+
+/* Table Styles */
+.table-nile {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-nile th {
+  background-color: var(--nile-blue);
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table-nile td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--nile-blue-pale);
+}
+
+.table-nile tr:nth-child(even) {
+  background-color: var(--nile-beige-pale);
+}
+
+/* Badge Styles */
+.badge-nile-blue {
+  background-color: var(--nile-blue);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-nile-beige {
+  background-color: var(--nile-beige);
+  color: var(--nile-blue);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Alert Styles */
+.alert-nile {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.alert-nile-blue {
+  background-color: var(--nile-blue-pale);
+  border-left: 4px solid var(--nile-blue);
+  color: var(--nile-blue-dark);
+}
+
+.alert-nile-beige {
+  background-color: var(--nile-beige-pale);
+  border-left: 4px solid var(--nile-beige);
+  color: var(--text-dark);
+}
+
+/* Progress Bar Styles */
+.progress-nile {
+  height: 0.5rem;
+  background-color: var(--nile-blue-pale);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-nile-bar {
+  height: 100%;
+  background-color: var(--nile-blue);
+  border-radius: 9999px;
+}
+
+/* Divider Styles */
+.divider-nile {
+  height: 2px;
+  background-color: var(--nile-blue-pale);
+  margin: 2rem 0;
+}
+
+.divider-nile-beige {
+  height: 2px;
+  background-color: var(--nile-beige);
+  margin: 2rem 0;
+}
+
+/* Hover Effects */
+.hover-grow {
+  transition: transform 0.2s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.2s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus Styles for Accessibility */
+.focus-nile:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 190, 0.4);
+}
