@@ -1,6 +1,6 @@
 // Components for the header/navbar
 import { useState } from 'react';
-import { getTranslations, getLocalizedPath } from '../i18n/utils';
+import { getTranslations, getLocalizedPath } from '../../i18n/utils';
 
 export default function Header({ locale }) {
   const t = getTranslations(locale);
