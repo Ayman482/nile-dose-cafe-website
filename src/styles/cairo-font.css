@@ -1,0 +1,237 @@
+/* Cairo Font Integration for Arabic Text */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Apply Cairo font to Arabic text */
+[dir="rtl"] body,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select,
+[dir="rtl"] a {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Font weights for Arabic text */
+[dir="rtl"] .font-light {
+  font-weight: 300;
+}
+
+[dir="rtl"] .font-normal {
+  font-weight: 400;
+}
+
+[dir="rtl"] .font-medium {
+  font-weight: 500;
+}
+
+[dir="rtl"] .font-semibold {
+  font-weight: 600;
+}
+
+[dir="rtl"] .font-bold {
+  font-weight: 700;
+}
+
+[dir="rtl"] .font-extrabold {
+  font-weight: 800;
+}
+
+[dir="rtl"] .font-black {
+  font-weight: 900;
+}
+
+/* Font sizes for Arabic text - slightly larger for better readability */
+[dir="rtl"] .text-xs {
+  font-size: 0.8rem;
+}
+
+[dir="rtl"] .text-sm {
+  font-size: 0.95rem;
+}
+
+[dir="rtl"] .text-base {
+  font-size: 1.05rem;
+}
+
+[dir="rtl"] .text-lg {
+  font-size: 1.15rem;
+}
+
+[dir="rtl"] .text-xl {
+  font-size: 1.3rem;
+}
+
+[dir="rtl"] .text-2xl {
+  font-size: 1.6rem;
+}
+
+[dir="rtl"] .text-3xl {
+  font-size: 1.9rem;
+}
+
+[dir="rtl"] .text-4xl {
+  font-size: 2.3rem;
+}
+
+[dir="rtl"] .text-5xl {
+  font-size: 3.1rem;
+}
+
+/* Line height adjustments for Arabic text */
+[dir="rtl"] {
+  line-height: 1.6;
+}
+
+/* Letter spacing adjustments for Arabic text */
+[dir="rtl"] {
+  letter-spacing: 0;
+}
+
+/* Text alignment for RTL */
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+/* Adjust spacing for RTL */
+[dir="rtl"] .mr-1 { margin-right: 0; margin-left: 0.25rem; }
+[dir="rtl"] .mr-2 { margin-right: 0; margin-left: 0.5rem; }
+[dir="rtl"] .mr-3 { margin-right: 0; margin-left: 0.75rem; }
+[dir="rtl"] .mr-4 { margin-right: 0; margin-left: 1rem; }
+[dir="rtl"] .mr-5 { margin-right: 0; margin-left: 1.25rem; }
+[dir="rtl"] .mr-6 { margin-right: 0; margin-left: 1.5rem; }
+[dir="rtl"] .mr-8 { margin-right: 0; margin-left: 2rem; }
+
+[dir="rtl"] .ml-1 { margin-left: 0; margin-right: 0.25rem; }
+[dir="rtl"] .ml-2 { margin-left: 0; margin-right: 0.5rem; }
+[dir="rtl"] .ml-3 { margin-left: 0; margin-right: 0.75rem; }
+[dir="rtl"] .ml-4 { margin-left: 0; margin-right: 1rem; }
+[dir="rtl"] .ml-5 { margin-left: 0; margin-right: 1.25rem; }
+[dir="rtl"] .ml-6 { margin-left: 0; margin-right: 1.5rem; }
+[dir="rtl"] .ml-8 { margin-left: 0; margin-right: 2rem; }
+
+[dir="rtl"] .pr-1 { padding-right: 0; padding-left: 0.25rem; }
+[dir="rtl"] .pr-2 { padding-right: 0; padding-left: 0.5rem; }
+[dir="rtl"] .pr-3 { padding-right: 0; padding-left: 0.75rem; }
+[dir="rtl"] .pr-4 { padding-right: 0; padding-left: 1rem; }
+[dir="rtl"] .pr-5 { padding-right: 0; padding-left: 1.25rem; }
+[dir="rtl"] .pr-6 { padding-right: 0; padding-left: 1.5rem; }
+[dir="rtl"] .pr-8 { padding-right: 0; padding-left: 2rem; }
+
+[dir="rtl"] .pl-1 { padding-left: 0; padding-right: 0.25rem; }
+[dir="rtl"] .pl-2 { padding-left: 0; padding-right: 0.5rem; }
+[dir="rtl"] .pl-3 { padding-left: 0; padding-right: 0.75rem; }
+[dir="rtl"] .pl-4 { padding-left: 0; padding-right: 1rem; }
+[dir="rtl"] .pl-5 { padding-left: 0; padding-right: 1.25rem; }
+[dir="rtl"] .pl-6 { padding-left: 0; padding-right: 1.5rem; }
+[dir="rtl"] .pl-8 { padding-left: 0; padding-right: 2rem; }
+
+/* Border radius adjustments for RTL */
+[dir="rtl"] .rounded-l {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+[dir="rtl"] .rounded-r {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* Form elements for RTL */
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  text-align: right;
+}
+
+/* List styles for RTL */
+[dir="rtl"] ul, 
+[dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* Flex direction for RTL */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .justify-start {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .justify-end {
+  justify-content: flex-start;
+}
+
+/* Grid column start/end for RTL */
+[dir="rtl"] .col-start-1 {
+  grid-column-start: -1;
+}
+
+[dir="rtl"] .col-end-1 {
+  grid-column-end: -1;
+}
+
+/* Transform for RTL */
+[dir="rtl"] .rotate-90 {
+  transform: rotate(-90deg);
+}
+
+[dir="rtl"] .rotate-180 {
+  transform: rotate(-180deg);
+}
+
+[dir="rtl"] .rotate-270 {
+  transform: rotate(-270deg);
+}
+
+/* Specific adjustments for Cairo font */
+[dir="rtl"] .cairo-light {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 300;
+}
+
+[dir="rtl"] .cairo-regular {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+}
+
+[dir="rtl"] .cairo-medium {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 500;
+}
+
+[dir="rtl"] .cairo-semibold {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+}
+
+[dir="rtl"] .cairo-bold {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+[dir="rtl"] .cairo-extrabold {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 800;
+}
+
+[dir="rtl"] .cairo-black {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 900;
+}
