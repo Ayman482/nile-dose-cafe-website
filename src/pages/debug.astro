@@ -1,0 +1,15 @@
+---
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || 'Not defined';
+const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY ? 'Defined (hidden) ' : 'Not defined';
+---
+
+<html>
+  <head>
+    <title>Debug Environment Variables</title>
+  </head>
+  <body>
+    <h1>Environment Variables Debug</h1>
+    <p>PUBLIC_SUPABASE_URL: {supabaseUrl}</p>
+    <p>PUBLIC_SUPABASE_ANON_KEY: {supabaseKey}</p>
+  </body>
+</html>
