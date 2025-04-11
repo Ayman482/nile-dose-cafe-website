@@ -1,0 +1,34 @@
+---
+// src/pages/loyalty.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/ui/Header.jsx';
+import Footer from '../components/ui/Footer.jsx';
+import LoyaltyDashboard from '../components/loyalty/LoyaltyDashboard.jsx';
+import { getTranslations } from '../i18n/utils';
+
+const locale = 'ar'; // Default locale is Arabic
+const t = getTranslations(locale);
+---
+
+<Layout title="برنامج الولاء - النيل دوز كافيه" lang={locale}>
+  <Header locale={locale} client:load />
+  
+  <main>
+    <!-- Loyalty Hero Section -->
+    <section class="bg-nile-blue text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-4">برنامج الولاء</h1>
+        <p class="text-xl max-w-3xl mx-auto">اكسب النقاط مع كل زيارة واستبدلها بمكافآت حصرية</p>
+      </div>
+    </section>
+    
+    <!-- Loyalty Dashboard -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <LoyaltyDashboard locale={locale} client:load />
+      </div>
+    </section>
+  </main>
+  
+  <Footer locale={locale} t={t} />
+</Layout>

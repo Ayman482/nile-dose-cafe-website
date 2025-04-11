@@ -1,0 +1,34 @@
+---
+// src/pages/en/loyalty.astro
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/ui/Header.jsx';
+import Footer from '../../components/ui/Footer.jsx';
+import LoyaltyDashboard from '../../components/loyalty/LoyaltyDashboard.jsx';
+import { getTranslations } from '../../i18n/utils';
+
+const locale = 'en'; // English locale
+const t = getTranslations(locale);
+---
+
+<Layout title="Loyalty Program - Nile Dose Cafe" lang={locale}>
+  <Header locale={locale} client:load />
+  
+  <main>
+    <!-- Loyalty Hero Section -->
+    <section class="bg-nile-blue text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-4">Loyalty Program</h1>
+        <p class="text-xl max-w-3xl mx-auto">Earn points with every visit and redeem them for exclusive rewards</p>
+      </div>
+    </section>
+    
+    <!-- Loyalty Dashboard -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <LoyaltyDashboard locale={locale} client:load />
+      </div>
+    </section>
+  </main>
+  
+  <Footer locale={locale} t={t} />
+</Layout>

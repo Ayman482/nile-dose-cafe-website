@@ -1,0 +1,40 @@
+/* src/components/menu/MenuDisplay.css */
+.category-nav {
+  scrollbar-width: thin;
+  scrollbar-color: #0077b6 #e2e8f0;
+}
+
+.category-nav::-webkit-scrollbar {
+  height: 6px;
+}
+
+.category-nav::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+.category-nav::-webkit-scrollbar-thumb {
+  background-color: #0077b6;
+  border-radius: 20px;
+}
+
+.menu-items-grid {
+  min-height: 400px;
+}
+
+.menu-item {
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+/* RTL support for Arabic */
+[lang="ar"] .menu-item-content {
+  direction: rtl;
+  text-align: right;
+}
+
+[lang="ar"] .category-btn {
+  font-family: 'Cairo', sans-serif;
+}

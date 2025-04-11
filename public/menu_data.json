@@ -1,142 +1,95 @@
-{
-  "categories": [
-    {
-      "name": "Signature Drinks",
-      "name_ar": "المشروبات المميزة",
-      "items": [
-        {
-          "id": "sig1",
-          "name": "Hibiscus Signature",
-          "name_ar": "كركديه مميز",
-          "description": "Traditional Sudanese hibiscus drink with a modern twist",
-          "description_ar": "مشروب الكركديه السوداني التقليدي بلمسة عصرية",
-          "price": 18,
-          "image": "hibiscus_signature.jpg"
-        },
-        {
-          "id": "sig2",
-          "name": "Tamarind Signature",
-          "name_ar": "عصير تمر هندي مميز",
-          "description": "Refreshing tamarind drink with special spices",
-          "description_ar": "مشروب منعش من التمر الهندي مع توابل خاصة",
-          "price": 18,
-          "image": "tamarind_signature.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Traditional Porridge",
-      "name_ar": "العصيدة التقليدية",
-      "items": [
-        {
-          "id": "por1",
-          "name": "Classic Madida",
-          "name_ar": "مديدة كلاسيكية",
-          "description": "Traditional Sudanese porridge with milk and honey",
-          "description_ar": "عصيدة سودانية تقليدية مع الحليب والعسل",
-          "price": 22,
-          "image": "classic_madida.jpg"
-        },
-        {
-          "id": "por2",
-          "name": "Fruit Madida",
-          "name_ar": "مديدة بالفواكه",
-          "description": "Traditional porridge topped with seasonal fruits",
-          "description_ar": "عصيدة تقليدية مع الفواكه الموسمية",
-          "price": 25,
-          "image": "fruit_madida.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Hot Drinks",
-      "name_ar": "المشروبات الساخنة",
-      "items": [
-        {
-          "id": "hot1",
-          "name": "Sudanese Coffee",
-          "name_ar": "قهوة سودانية",
-          "description": "Traditional Sudanese coffee with cardamom and ginger",
-          "description_ar": "قهوة سودانية تقليدية بالهيل والزنجبيل",
-          "price": 15,
-          "image": "sudanese_coffee.jpg"
-        },
-        {
-          "id": "hot2",
-          "name": "Turkish Coffee",
-          "name_ar": "قهوة تركية",
-          "description": "Rich Turkish coffee with cardamom",
-          "description_ar": "قهوة تركية غنية بالهيل",
-          "price": 12,
-          "image": "turkish_coffee.jpg"
-        },
-        {
-          "id": "hot3",
-          "name": "Espresso",
-          "name_ar": "إسبريسو",
-          "description": "Strong Italian espresso",
-          "description_ar": "إسبريسو إيطالي قوي",
-          "price": 10,
-          "image": "espresso.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Cold Drinks",
-      "name_ar": "المشروبات الباردة",
-      "items": [
-        {
-          "id": "cold1",
-          "name": "Hibiscus Mojito",
-          "name_ar": "موهيتو الكركديه",
-          "description": "Refreshing hibiscus mojito with mint and lime",
-          "description_ar": "موهيتو الكركديه المنعش بالنعناع والليمون",
-          "price": 20,
-          "image": "hibiscus_mojito.jpg"
-        },
-        {
-          "id": "cold2",
-          "name": "Mango Smoothie",
-          "name_ar": "سموذي المانجو",
-          "description": "Creamy mango smoothie with a hint of cardamom",
-          "description_ar": "سموذي المانجو الكريمي مع لمسة من الهيل",
-          "price": 22,
-          "image": "mango_smoothie.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Desserts & Snacks",
-      "name_ar": "الحلويات والوجبات الخفيفة",
-      "items": [
-        {
-          "id": "des1",
-          "name": "Sudanese Fateer",
-          "name_ar": "فطير سوداني",
-          "description": "Traditional Sudanese layered pastry with honey",
-          "description_ar": "فطيرة سودانية تقليدية متعددة الطبقات مع العسل",
-          "price": 18,
-          "image": "sudanese_fateer.jpg"
-        },
-        {
-          "id": "des2",
-          "name": "Basbousa",
-          "name_ar": "بسبوسة",
-          "description": "Sweet semolina cake with syrup",
-          "description_ar": "كيكة السميد الحلوة مع الشراب",
-          "price": 15,
-          "image": "basbousa.jpg"
-        },
-        {
-          "id": "des3",
-          "name": "Hibiscus Cheesecake",
-          "name_ar": "تشيز كيك الكركديه",
-          "description": "Fusion dessert with hibiscus-flavored cheesecake",
-          "description_ar": "حلوى مبتكرة من تشيز كيك بنكهة الكركديه",
-          "price": 25,
-          "image": "hibiscus_cheesecake.jpg"
-        }
-      ]
+// src/components/menu/EnhancedMenuDisplay.jsx
+import React, { useState } from 'react';
+import './MenuDisplay.css';
+
+const EnhancedMenuDisplay = ({ locale, menuData }) => {
+  const [activeCategory, setActiveCategory] = useState(0);
+  
+  // Check if menuData exists and has categories
+  if (!menuData || !menuData.categories || menuData.categories.length === 0) {
+    console.error('Menu data is missing or invalid:', menuData);
+    return (
+      <div className="container mx-auto px-4 text-center">
+        <p className="text-xl text-red-500">
+          {locale === 'ar' ? 'عفواً، لا يمكن تحميل بيانات القائمة' : 'Sorry, menu data could not be loaded'}
+        </p>
+      </div>
+    );
+  }
+  
+  const handleCategoryClick = (index) => {
+    setActiveCategory(index);
+  };
+  
+  // Get the name based on locale
+  const getCategoryName = (category) => {
+    return locale === 'ar' ? category.name_ar : category.name;
+  };
+  
+  const getItemName = (item) => {
+    return locale === 'ar' ? item.name_ar : item.name;
+  };
+  
+  const getItemDescription = (item) => {
+    return locale === 'ar' ? item.description_ar : item.description;
+  };
+  
+  // Get image path for menu item
+  const getMenuItemImage = (item) => {
+    if (item.image) {
+      return `/images/menu/${item.image}`;
     }
-  ]
-}
+    return '/images/menu/default-item.jpg';
+  };
+  
+  // Render menu items
+  const renderMenuItems = (items) => {
+    return items.map((item, index) => (
+      <div key={item.id || index} className="menu-item bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="menu-item-image">
+          <img 
+            src={getMenuItemImage(item)} 
+            alt={getItemName(item)}
+            className="w-full h-48 object-cover"
+          />
+        </div>
+        <div className="menu-item-content p-4">
+          <h3 className="text-xl font-bold mb-2">{getItemName(item)}</h3>
+          <p className="text-gray-600 mb-4">{getItemDescription(item)}</p>
+          <div className="flex justify-between items-center">
+            <span className="text-nile-blue font-bold text-lg">{item.price} SAR</span>
+            <button className="bg-nile-beige text-nile-blue px-4 py-2 rounded hover:bg-opacity-80 transition">
+              {locale === 'ar' ? 'أضف للسلة' : 'Add to Cart'}
+            </button>
+          </div>
+        </div>
+      </div>
+    ));
+  };
+  
+  return (
+    <div className="container mx-auto px-4">
+      {/* Category Navigation */}
+      <div className="category-nav flex overflow-x-auto mb-8 pb-2">
+        {menuData.categories.map((category, index) => (
+          <button
+            key={index}
+            className={`category-btn whitespace-nowrap px-6 py-3 mx-2 rounded-full ${
+              activeCategory === index ? 'bg-nile-blue text-white' : 'bg-gray-200 text-gray-800'
+            }`}
+            onClick={() => handleCategoryClick(index)}
+          >
+            {getCategoryName(category)}
+          </button>
+        ))}
+      </div>
+      
+      {/* Menu Items Grid */}
+      <div className="menu-items-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {renderMenuItems(menuData.categories[activeCategory].items)}
+      </div>
+    </div>
+  );
+};
+
+export default EnhancedMenuDisplay;

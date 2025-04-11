@@ -1,0 +1,24 @@
+---
+// src/pages/en/register.astro
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/ui/Header.jsx';
+import Footer from '../../components/ui/Footer.jsx';
+import RegisterForm from '../../components/auth/RegisterForm.jsx';
+import { getTranslations } from '../../i18n/utils';
+
+const locale = 'en'; // English locale
+const t = getTranslations(locale);
+---
+
+<Layout title="Register - Nile Dose Cafe" lang={locale}>
+  <Header locale={locale} client:load />
+  
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-6 text-center">Create New Account</h1>
+      <RegisterForm client:load />
+    </div>
+  </main>
+  
+  <Footer locale={locale} t={t} />
+</Layout>
