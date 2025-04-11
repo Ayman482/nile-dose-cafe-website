@@ -1,6 +1,6 @@
 // src/components/menu/EnhancedMenuDisplay.jsx
 import React, { useState } from 'react';
-import './MenuDisplay.css';
+import '../src/component/menu/MenuDisplay.css';
 
 const EnhancedMenuDisplay = ({ locale, menuData }) => {
   const [activeCategory, setActiveCategory] = useState(0);
