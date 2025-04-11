@@ -5,7 +5,7 @@ export default function Footer({ locale, t }) {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <img src="/images/Logo.png" alt="Nile Dose Cafe" className="h-16 mb-4" />
+            <img src="/images/FLogo.png" alt="Nile Dose Cafe" className="h-16 mb-4" />
             <p className="text-sm">{t.footer.rights}</p>
             <p className="text-sm mt-2">{t.footer.address}</p>
           </div>
